@@ -22,7 +22,7 @@ from saarctf_client import *
 ip = sys.argv[1]
 assert_online(ip)
 
-for round, data in get_flag_ids('service_1', ip):
+for round, data in get_flag_ids('service_1', ip).items():
     # do stuff
     pass
 ```
